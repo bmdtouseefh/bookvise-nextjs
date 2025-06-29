@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -8,6 +9,7 @@ export const metadata = {
   description: 'Discover your next great read with AI-powered recommendations tailored to your emotions and goals.',
   keywords: 'books, AI recommendations, reading, book suggestions, personalized books',
   authors: [{ name: 'TweakAI' }],
+
   creator: 'TweakAI',
   openGraph: {
     title: 'BookVise - Find Your Next Great Read',
@@ -43,6 +45,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* <link rel='icon' href='public/icon.png'></link> */}
       </head>
       <body className={inter.className}>
         {children}
